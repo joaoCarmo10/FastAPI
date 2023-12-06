@@ -14,3 +14,11 @@ async def index(request: Request, usuario: str = "João Pedro"):
     }
     
     return templates.TemplateResponse ('index.html', context=context)
+
+@app.get('/servicos')
+async def servicos(request: Request):
+    context = {
+        "request": request,
+    }
+    
+    return templates.TemplateResponse ('servicos.html', context=context)
