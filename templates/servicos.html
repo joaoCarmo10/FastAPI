@@ -2,4 +2,12 @@
 {%block container %}
     <h1 class="text-center">Hello again</h1>
     <h4 class="text-center">Pagina dos Serviços</h4>
+    <form class="row g-2" action="/servicos" method="post" autocomplete="off">
+        <div class="col-auto">
+            <input type="text" class="form-control" name="servico" placeholder="Serviço">
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+        </div>
+    </form>    
 {% endblock %}
